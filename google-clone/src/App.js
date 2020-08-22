@@ -1,11 +1,11 @@
 import React from 'react';
 import Home from './pages/Home';
-
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <h1>Hey buddies, lets build google clone</h1>
       <h1>Hey buddies, lets build Google clone app-Sarveshwar mahapatro</h1>
 
       {/*Home */}

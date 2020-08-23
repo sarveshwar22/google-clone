@@ -1,17 +1,27 @@
 import React from 'react';
-import Home from './pages/Home';
+
 import './App.css';
+
+//import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
+//import ImageSearchIcon from '@material-ui/icons/ImageSearch';
+
+import Home from './pages/Home';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Hey buddies, lets build google clone</h1>
-      <h1>Hey buddies, lets build Google clone app-Sarveshwar mahapatro</h1>
-
-      {/*Home */}
-      <Home />
-
-      {/* searchPage */}
+      <Router>
+        <Switch>
+          <Route path="/search">
+            <h1>search page</h1>
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

@@ -1,31 +1,29 @@
 import React from 'react'
 import './Home.css'
 
-import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
-import ImageSearchIcon from '@material-ui/icons/ImageSearch';
+import { Link } from "react-router-dom";
 
-
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function Home()
 {
     return (
         <div className='home'>
-            <h1>This is home page</h1>
-
-            <div className='home_header'>
-                <div className='home_header_left'>
-                    {/*Link */}
-                    {/*Link */}
+            <h1>This is home page ok</h1>
+            <h1>dsc</h1>
+            <div className = 'home_header'>
+                
+                <div className = 'home_header_left'>
+                    <Link to='/about'>About</Link>
+                    <Link to='/store'>Store</Link>
+                    
+                </div>
                 <div className='home_header_right'>
-                    {/*Link*/}
-                    {/*Link*/}
+                    <Link to='/gmail'>Gmail</Link>
+                    <Link to='/images'>Images</Link>
                     {/*Icon*/}
                     {/*Avatar*/}
                     
                 </div>    
-                </div>
-
             </div>
             <div className='home_body'>
 

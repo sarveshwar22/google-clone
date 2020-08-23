@@ -2,8 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-//import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
-//import ImageSearchIcon from '@material-ui/icons/ImageSearch';
+
 
 import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";

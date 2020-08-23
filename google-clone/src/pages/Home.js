@@ -2,14 +2,13 @@ import React from 'react'
 import './Home.css'
 
 import { Link } from "react-router-dom";
-
+import AppsIcon from "@material-ui/icons/Apps";
+import {Avatar} from "@material-ui/core"
 
 function Home()
 {
     return (
         <div className='home'>
-            <h1>This is home page ok</h1>
-            <h1>dsc</h1>
             <div className = 'home_header'>
                 
                 <div className = 'home_header_left'>
@@ -21,12 +20,19 @@ function Home()
                     <Link to='/gmail'>Gmail</Link>
                     <Link to='/images'>Images</Link>
                     {/*Icon*/}
+                    <AppsIcon />
                     {/*Avatar*/}
+                    <Avatar />
                     
                 </div>    
             </div>
             <div className='home_body'>
-
+                {/*logo*/}
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" />
+                <div className="home_input_container">
+                    {/*SEARCH */}
+                    
+                </div>
             </div>
         </div>
     )

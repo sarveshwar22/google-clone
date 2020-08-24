@@ -33,7 +33,7 @@ function Home()
                 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" />
                 <div className="home_input_container">
                     {/*SEARCH */}
-                    <Search />
+                    <Search hideButtons/>
                 </div>
             </div>
         </div>

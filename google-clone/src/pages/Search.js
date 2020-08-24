@@ -8,7 +8,7 @@ import { Button } from '@material-ui/core';
 
 import { useHistory } from 'react-router-dom';
 
-function Search()
+function Search({hideButtons = false})
 {
     const [input, setInput] = useState("")
     const history = useHistory();
@@ -27,10 +27,14 @@ function Search()
                 <input value={input} onChange={e => setInput(e.target.value)} />
                 <HeadsetMicIcon />
             </div>
-            <div className="search_buttons">
+            {!hideButtons ? (<div className="search_buttons">
                 <Button type='submit' variant="outlined" onClick={search}>Search on Google</Button>
                 <Button variant="outlined">I'm Feeling Crazy</Button>
-            </div>
+            </div>):(<div className="search_buttons">
+                <Button className="search_buttons_hidden" type='submit' variant="outlined" onClick={search}>Search on Google</Button>
+                <Button className="search_buttons_hidden" variant="outlined">I'm Feeling Crazy</Button>
+            </div>)}
+            
         </form>
     )
 }
